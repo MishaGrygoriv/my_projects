@@ -1,0 +1,34 @@
+$style: "seller";
+.#{$style} {
+    background-color: $main-color;
+    padding: 84px 0 28px;
+    &__list {
+        @include flex(center, center, row);
+        text-align: center;
+    }
+    &__item {
+        @include flex(space-around, center, column);
+        max-width: 250px;
+        margin: auto;
+    }
+    &__img-wrapper {
+        position: relative;
+        padding-bottom: 100%;
+        width: 100%;
+        margin-bottom: 41px;
+    }
+    &__img {
+        position: absolute;
+        @include position();
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__item-title {
+        @include text($seller-section-title-size, 700, $light-color);
+        margin-bottom: 27px;
+    }
+    &__item-text {
+        @include text($seller-section-text-size, 400, $light-color);
+    }
+}

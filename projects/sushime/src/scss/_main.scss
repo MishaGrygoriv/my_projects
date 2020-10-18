@@ -1,0 +1,7 @@
+$style: "main";
+.#{$style} {
+    &__title {
+        @include text($section-title-size, 700, $light-color);
+        text-transform: uppercase;
+    }
+}
