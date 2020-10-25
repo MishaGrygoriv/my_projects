@@ -1,0 +1,37 @@
+$style: "statistics";
+.#{$style} {
+    background-color: $main-color;
+    padding: 156px 0 132px;
+    &__container {
+        @include flex(center, center, column);
+    }
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__text {
+        font-size: $section-small-text-size;
+        max-width: 685px;
+        text-align: center;
+        margin-bottom: 96px;
+    }
+    &__list {
+        @include flex(space-between, center);
+    }
+    &__item {
+        @include flex(center, center, column);
+        border: 5px solid $light-color;
+        border-radius: 50%;
+        padding: 60px;
+        margin-right: 140px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__item-title {
+        @include text($header-title-size, 700, $light-color);
+    }
+    &__item-subtitle {
+        @include text($statistics-subtitle-size, 700, $light-color);
+        text-transform: uppercase;
+    }
+}

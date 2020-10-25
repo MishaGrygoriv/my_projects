@@ -1,0 +1,7 @@
+$style: "tasty";
+.#{$style} {
+    background: url('../img/tasty-bg-img.png') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 120px 0 210px;
+}

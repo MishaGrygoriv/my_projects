@@ -1,0 +1,36 @@
+$style: "footer";
+.#{$style} {
+    background-color: $dark-color;
+    padding: 248px 0;
+    &__container {
+        max-width: 1270px;
+        margin: 0 auto;
+        @include flex(space-between, center);
+    }
+    &__col {
+        @include flex(flex-start, flex-start, column);
+        &--first-col {
+            max-width: 457px;
+            width: 100%;
+            margin-right: 168px;
+        }
+    }
+    &__title {
+        @include text($footer-title-size, 400, $light-color);
+        margin-bottom: 38px;
+    }
+    &__text {
+        @include text($footer-text-size, 400, $light-color);
+        margin-bottom: 35px;
+        span {
+            display: block;
+        }
+    }
+    &__link {
+        @include text($footer-text-size, 400, $light-color);
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

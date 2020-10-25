@@ -28,7 +28,4 @@ $style: "seller";
         @include text($seller-section-title-size, 700, $light-color);
         margin-bottom: 27px;
     }
-    &__item-text {
-        @include text($seller-section-text-size, 400, $light-color);
-    }
 }
