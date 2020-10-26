@@ -16,6 +16,7 @@ $style: "statistics";
     }
     &__list {
         @include flex(space-between, center);
+        flex-wrap: wrap;
     }
     &__item {
         @include flex(center, center, column);

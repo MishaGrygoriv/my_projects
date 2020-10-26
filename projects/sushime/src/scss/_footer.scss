@@ -14,6 +14,9 @@ $style: "footer";
             width: 100%;
             margin-right: 168px;
         }
+        &--fourth {
+            padding-bottom: 94px;
+        }
     }
     &__title {
         @include text($footer-title-size, 400, $light-color);
@@ -21,7 +24,7 @@ $style: "footer";
     }
     &__text {
         @include text($footer-text-size, 400, $light-color);
-        margin-bottom: 35px;
+        margin-bottom: 45px;
         span {
             display: block;
         }
@@ -31,6 +34,15 @@ $style: "footer";
         margin-bottom: 20px;
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+    &__social-list {
+        @include flex(center, center);
+    }
+    &__social-item {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
